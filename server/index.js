@@ -25,6 +25,5 @@ app.use((err, req, res, next) => {
     res.status(err.status || 500).send(err.message || 'Internal server error')
 })//error handling
 
-app.listen(8000, console.log('listening...'))
 
-module.exports = app
+module.exports = app //will be listening on ../main.js
